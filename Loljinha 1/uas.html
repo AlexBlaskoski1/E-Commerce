@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste do carrinho</title>
+    <script src="Site.js"></script>
+    <link rel="stylesheet" href="style2.css">
+  
+    <header>
+        <a href="Index.html"class="Logo">Loljinha</a>
+        <ul class="pesquisa">
+<li><a href="site2.html"class="Produtos">Produtos</a></li>
+<li><a href="uas.html"class="Carrinho">Carrinho</a></li>
+<li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1794659872%3A1677682432546461&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"class="Conta">Conta</a></li>
+</header>
+        </ul>
+  <style>
+  </style>
+</head>
+<body>
+  <h1>Teste do carrinho</h1>
+  <div>
+    <h2>Produtos</h2>
+    <ul id="produtos">
+      <li>
+        <span>Produto 1 - R$ 16</span>
+        <button onclick="adicionarItem(1)">Adicionar</button>
+      </li>
+      <li>
+        <span>Produto 2 - R$ 121</span>
+        <button onclick="adicionarItem(2)">Adicionar</button>
+      </li>
+      <li>
+        <span>Produto 3 - R$ 151</span>
+        <button onclick="adicionarItem(3)">Adicionar</button>
+      </li>
+      <li>
+        <span>Atulizar carrinho</span>
+        <button onclick="atualizarCarrinho()">atualizar</button>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Carrinho</h2>
+    <ul id="carrinho">
+    </ul>
+    <div id="valor-total"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

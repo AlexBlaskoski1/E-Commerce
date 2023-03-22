@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script2.js"></script>
+    <script src="Site.js"></script>
+    <link rel="stylesheet" href="style3.css">
+    <header>
+        <a href="Index.html"class="Logo">Loljinha</a>
+        <ul class="pesquisa">
+            <li><a href="site2.html"class="Produtos">Produtos</a></li>
+            <li><a href="uas.html"class="Carrinho">Carrinho</a></li>
+            <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1794659872%3A1677682432546461&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"class="Conta">Conta</a></li>
+        </ul>
+    </header>
+    <title>Produto</title>
+</head>
+<body>
+    <h1></h1>
+    <div id="produtop">
+        <img src="" alt="Imagem do produto">
+        <h2></h2>
+        <p></p>
+        <h3></h3>
+        <button class="adicionar"> Adicionar ao carrinho </button>
+    </div>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var id = urlParams.get('id');
+        var nome = urlParams.get('nome');
+        var preco = urlParams.get('preco');
+        var descricao = urlParams.get('descricao');
+        var imagem = urlParams.get('imagem');
+
+        document.querySelector('h2').textContent = nome;
+        document.querySelector('p').textContent = preco;
+        document.querySelector('h3').textContent = descricao;
+        document.querySelector('img').src = imagem;
+
+        var botaoComprar = document.querySelector('.adicionar');
+botaoComprar.addEventListener('click', function() {
+  funcao1();
+  adicionarItem();
+});
+
+function funcao1() {
+    window.location.href = 'uas.html';
+}
+function adicionarItem() {
+    var id = urlParams.get('id');
+    var produto = {
+    id: id,
+    nome: "Produto " + id,
+    preco: id == 1 ? 16 : id == 2 ? 121 : id == 3 ? 151 : 200
+  };
+  carrinho.push(produto);
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+}
+    </script>
+    <div class="carr">
+        <h2>.</h2>
+        <ul id="carrinho">
+        </ul>
+        <div id="valor-total"></div>
+      
+    </div>
+</body>
+</html>

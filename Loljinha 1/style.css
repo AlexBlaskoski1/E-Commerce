@@ -1,0 +1,249 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 100px;
+z-index: 10;
+background: #242739;
+opacity: 70%;
+transition: 1s;
+}
+header:hover
+{
+    opacity: 100%;
+    transition: 0.5s;
+}
+header .pesquisa li a:hover
+{
+color: azure;
+transition: 0.1s;
+}
+header .Logo
+{
+position: relative;
+font-size: 1.5em;
+color: #e6a06f;
+text-decoration: none;
+font-weight: 600;
+}
+header .Logo:hover
+{
+color: azure;
+transition: 0.1s;
+}
+header .pesquisa
+{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 10px 0;
+}
+header .pesquisa li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+header .pesquisa li a
+{
+    color: #e6a06f;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  body 
+  {
+    background: #33454e;
+    min-height: 100vh;
+  }
+.Bolinha
+{
+    flex-wrap: wrap;
+   z-index: -0;
+    position: relative;
+    display: flex;
+}
+.Bolinha span
+{
+    z-index: -0;
+position: relative;
+flex-wrap: wrap;
+width: 30px;
+height: 30px;
+background: #ffa739;
+margin: 0 4px; 
+border-radius: 50%;
+box-shadow: 0 0 0 10px #ffa73960,
+0 0 50px #ffa739,
+0 0 100px #ffa739;
+animation: animate 15s linear infinite;
+animation-duration: calc(170s / var(--i));
+}
+.Bolinha span:nth-child(even)
+{
+    flex-wrap: wrap;
+    background: #5e8271;
+    box-shadow: 0 0 0 10px #5e827189,
+    0 0 50px #5e8271,
+    0 0 100px #5e8271;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(37vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-90vh) scale(1);
+    }
+}
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card-container {
+    bottom: 10;
+    z-index: 1;
+    display: flex; 
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .card {
+    bottom: 10;
+    margin-right: 90px;
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+    list-style: none;
+    gap: 30px;
+    width: 250px;
+    transition: .3s ease;
+  }
+  
+  .card:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card-background {
+    width: 290px;
+    height: 200px;
+    margin-top: 250px;
+    margin-right:250px;
+    position: absolute;
+    bottom: 0;
+    right: 2;
+    left: 2;
+    top: 0;
+    border-radius: 20px;
+    background-size: 270px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+  }
+  
+  .card:hover .card-background {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+  }
+  
+  .card-container:hover .card:not(:hover) {
+    transform: scale(.9);
+  }
+  
+  .card-container:hover > .card:not(:hover) .card-background,
+  .card-container:hover > .card:not(:hover) .card-category {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .content {
+    top: 50%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+  }
+  
+  .card-category {
+    color: #e6a06f;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  .card-heading {
+    color: #e6a06f;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+  }
+  footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5e827189;
+    color: #e6a06f;
+    text-align: center;
+    opacity: 40%;
+    transition: .3s;
+  }
+  footer:hover{
+    opacity: 100%;
+    transition: .3s;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+  
+  .contact-info i {
+    margin-right: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
+  

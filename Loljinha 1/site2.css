@@ -1,0 +1,173 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 100px;
+z-index: 10;
+background: #242739;
+opacity: 70%;
+transition: 1s;
+}
+header:hover
+{
+    opacity: 100%;
+    transition: 0.5s;
+}
+header .pesquisa li a:hover
+{
+color: azure;
+transition: 0.1s;
+}
+header .Logo
+{
+position: relative;
+font-size: 1.5em;
+color: #e6a06f;
+text-decoration: none;
+font-weight: 600;
+}
+header .Logo:hover
+{
+color: azure;
+transition: 0.1s;
+}
+header .pesquisa
+{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin: 10px 0;
+}
+header .pesquisa li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+header .pesquisa li a
+{
+    color: #e6a06f;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  body 
+  {
+    background: #33454e;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container 
+  {
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Products */
+  .Produto img 
+  {
+    opacity: 0.6;
+    padding-left: 60px;
+    padding-top: 100px;
+    position: absolute;
+    transition: 1s;
+    z-index: 1;
+  }
+  
+  .Produto img:hover 
+  {
+    opacity: 1.0;
+    transition: 1s;
+  }
+  
+  /* Footer */
+  footer 
+  {
+    background: #33454e;
+    bottom: 10;
+    color: aliceblue;
+    font-family: system-ui, 'Open Sans';
+    height: 100vw;
+    padding-top: 40px;
+    position: absolute;
+  }
+  
+  /* Bouncing balls */
+  .Bolinha 
+  {
+    display: flex;
+    position: relative;
+    z-index: -0;
+  }
+  
+  .Bolinha span 
+  {
+    animation: animate 15s linear infinite;
+    animation-duration: calc(170s / var(--i));
+    background: #e6a06f;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #e6a06f60, 0 0 50px #e6a06f, 0 0 100px #e6a06f;
+    height: 30px;
+    margin: 0 4px;
+    position: relative;
+    width: 30px;
+    z-index: 1;
+  }
+.Bolinha span:nth-child(even)
+{
+    background: #5e8271;
+    box-shadow: 0 0 0 10px #5e827189,
+    0 0 50px #5e8271,
+    0 0 100px #5e8271;
+}
+footer
+{
+    position: absolute;
+    bottom: 10;
+    background: #33454e;
+    height: 100vw;
+    font-family: system-ui, 'Open Sans';
+    padding-top: 40px;
+    color: aliceblue;
+}
+.Produto img
+{
+opacity: 0.6;
+z-index:  1;
+position: absolute;
+padding-top: 100px;
+padding-left: 60px;
+transition: 1s;
+}
+.Produto img:hover
+{
+    opacity: 1.0;
+    transition: 1s;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
