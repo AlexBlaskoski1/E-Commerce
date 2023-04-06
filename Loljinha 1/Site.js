@@ -78,3 +78,18 @@ if (valorTotalSalvo) {
   var valorTotalElemento = document.getElementById("valor-total");
   valorTotalElemento.innerHTML = "Valor Total: R$ " + parseFloat(valorTotalSalvo).toFixed(2);
 }
+function search() {
+  const searchValue = document.getElementById("searchInput").value.toLowerCase();
+  const items = document.getElementsByClassName("product");
+
+  Array.from(items).forEach(function(item) {
+    const name = item.getElementsByTagName("h3")[0].textContent.toLowerCase();
+    const keywords = item.getAttribute("data-keywords").toLowerCase();
+
+    if (name.indexOf(searchValue) > -1 || keywords.indexOf(searchValue) > -1) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}

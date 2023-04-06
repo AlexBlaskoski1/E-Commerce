@@ -79,6 +79,39 @@ body{
     display: grid;
     place-content: center;
 }
+.search {
+    display: inline-block; /* Permite que o campo de pesquisa fique ao lado do ícone */
+    position: relative; /* Permite que o ícone seja posicionado de forma relativa ao campo de pesquisa */
+    margin-top: 100px; /* Adiciona um espaço de 10 pixels acima do campo de pesquisa */
+  }
+  
+  .search input[type="text"] {
+    width: 150px; /* Define a largura do campo de pesquisa como 150 pixels */
+    padding: 5px; /* Adiciona um espaço interno de 5 pixels ao redor do campo de pesquisa */
+    border: none; /* Remove a borda padrão do campo de pesquisa */
+    border-bottom: 2px solid gray; /* Adiciona uma borda cinza na parte inferior do campo de pesquisa */
+    outline: none; /* Remove o contorno padrão quando o campo de pesquisa está em foco */
+  }
+  
+  .search button[type="submit"] {
+    position: absolute; /* Permite que o ícone seja posicionado absolutamente em relação ao campo de pesquisa */
+    top: 10px; /* Adiciona um espaço de 10 pixels acima do ícone */
+    right: -10px; /* Posiciona o ícone 10 pixels à direita do campo de pesquisa */
+    width: 30px; /* Define a largura do ícone como 30 pixels */
+    height: 30px; /* Define a altura do ícone como 30 pixels */
+    border-radius: 50%; /* Define a borda como oval */
+    background-color: #eee; /* Define a cor de fundo como cinza claro */
+    border: none; /* Remove a borda padrão do ícone */
+  }
+  
+  .search button[type="submit"]::before {
+    content: "\1F50D"; /* Adiciona o emoji de lupa */
+    font-size: 16px; /* Define o tamanho da fonte do emoji */
+    line-height: 30px; /* Define a altura da linha para alinhar verticalmente o emoji */
+    color: #333; /* Define a cor do ícone como preto */
+  }
+  
+  
 .container{
     width: 97vw;
     height:80vh;
@@ -114,13 +147,17 @@ body{
     width: 350px;
     height: 100%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 20px 40px;
     border-radius: 10px;
     transition: .3s;
+    
 }
+.product[style*="none"] {
+    display: none;
+  }
 .product:hover{
     transform: translateY(-15px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);

@@ -13,6 +13,8 @@
 <li><a href="site2.html"class="Produtos">Produtos</a></li>
 <li><a href="uas.html"class="Carrinho">Carrinho</a></li>
 <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1794659872%3A1677682432546461&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=pt-BR&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"class="Conta">Conta</a></li>
+<input type="text" id="searchInput" placeholder="Digite aqui para pesquisar..." onkeydown="search()">
+
 
         </ul>
     </header>
@@ -23,141 +25,192 @@
         <div class="header">
             <h1>Produtos</h1>
         </div>
+        
 
         <div class="products">
             
-            <div class="product">
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/image.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Live Baroes Reaction</h3>
-                    <span>R$15.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(1)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                </div>
+            </div>
+              
+              
+
+            <div class="product" data-keywords="live,Baroes,Reaction">
+                <div class="image">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
+                </div>
+                <div class="namePrice">
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
+                </div>
+                <p>Wip</p>
+                <div class="bay">
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
 
-            <div class="product">
+            
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Switch Preto</h3>
-                    <span>R$120.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                </div>
+            </div>
+              
+              
+
+            <div class="product" data-keywords="live,Baroes,Reaction">
+                <div class="image">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
+                </div>
+                <div class="namePrice">
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
+                </div>
+                <p>Wip</p>
+                <div class="bay">
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
 
-            <div class="product">
+                        
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(3)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                </div>
+            </div>
+              
+              
+
+            <div class="product" data-keywords="live,Baroes,Reaction">
+                <div class="image">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
+                </div>
+                <div class="namePrice">
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
+                </div>
+                <p>Wip</p>
+                <div class="bay">
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
 
-            <div class="product">
+                        
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(4)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                </div>
+            </div>
+              
+              
+
+            <div class="product" data-keywords="live,Baroes,Reaction">
+                <div class="image">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
+                </div>
+                <div class="namePrice">
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
+                </div>
+                <p>Wip</p>
+                <div class="bay">
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
 
-            <div class="product">
+                        
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(5)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
+                </div>
+            </div>
+              
+              
+
+            <div class="product" data-keywords="live,Baroes,Reaction">
+                <div class="image">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
+                </div>
+                <div class="namePrice">
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
+                </div>
+                <p>Wip</p>
+                <div class="bay">
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
 
-            <div class="product">
+                        
+            <div class="product" data-keywords="game,console,switch,nintendo">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/switch.png" alt="">
                 </div>
                 <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
+                  <h3>Switch Preto</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(4)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
+              
+              
 
-            <div class="product">
+            <div class="product" data-keywords="live,Baroes,Reaction">
                 <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
+                  <img src="assets/image.png" alt="live,Baroes,Reaction">
                 </div>
                 <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
+                  <h3>Live Baroes</h3>
+                  <span>R$120.99</span>
                 </div>
                 <p>Wip</p>
-           
                 <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(4)"> Compre Agora </button>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
-                </div>
-                <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
-                </div>
-                <p>Wip</p>
-           
-                <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(4)"> Compre Agora </button>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="image">
-                    <img src="assets/03june22_game_controller_icon_02-removebg-preview.png" alt="">
-                </div>
-                <div class="namePrice">
-                    <h3>Produto teste</h3>
-                    <span>R$150.99</span>
-                </div>
-                <p>Wip</p>
-           
-                <div class="bay">
-                    <button class="adicionar" onclick="comprarProduto(4)"> Compre Agora </button>
+                  <button class="adicionar" onclick="comprarProduto(2)"> Compre Agora </button>
                 </div>
             </div>
         </div>
